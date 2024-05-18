@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poetsen+One&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE60aaZVaePL1CigtqMtsf4-mW5XWIWGh4_EmdcSjNbg&s);
+            /* background: url(https://wallpaperaccess.com/full/1872.jpg); */
+            background-size: cover;
+            background-position: inherit;
+
+        }
+
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            color: #9195F6;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .wrapper .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            /* background-color: #333; */
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: rgba(228, 90, 233, 0.3);
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #1e23aa;
+            padding: 20px 45px 20px 20px;
+            font-weight: 600;
+
+        }
+
+        .input-box input::placeholder {
+            color: rgb(253, 246, 246);
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #01139ec5;
+        }
+
+        .wrapper .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+
+        .remember-forgot label input {
+            accent-color: blue;
+            margin-right: 3px;
+        }
+
+        .remember-forgot a:hover {
+            text-decoration: underline;
+            color: violet;
+        }
+
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: white;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .btn :hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .wrapper .register-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin-top: 20px 0 15px;
+        }
+
+        .register-link p a {
+            color: #9195F6;
+            text-decoration: none;
+            font-weight: 600;
+            color: blue;
+        }
+
+        .register-link p a:hover {
+            text-decoration: underline;
+            color: violet;
+        }
+
+        .welcome {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            font-family: "Poetsen One", sans-serif;
+            font-size: 50px;
+            animation: anime 1s ease-in-out 0s 1 forwards;
+            /* border: 2px solid black; */
+            text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+                1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+
+        }
+        #for{
+            height: 100vh;
+            width: 100vw;
+            background: url(https://static.vecteezy.com/system/resources/previews/011/426/075/non_2x/aesthetic-white-and-green-background-with-space-for-text-modern-background-design-with-liquid-shape-white-background-with-green-liquid-shapes-free-vector.jpg);
+            background-size: cover;
+            background-position: inherit;
+           
+        }
+
+        #user {
+       
+            /* font-family: "Roboto Slab", serif; */
+            font-family: "Poetsen One", sans-serif;
+            margin-left: 20px;
+            margin-right: 10px;
+            font-weight: 600;
+            font-size: 42.9px;
+            text-transform: uppercase;
+        }
+
+        @keyframes anime {
+
+            0% {
+                transform: scale(0.9);
+                color: #f8ca8fec;
+
+            }
+
+            100% {
+                transform: scale(1);
+                color: #f1b76bec;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <form action="/" method="post" >
+            <h1>Login</h1>
+            <div class="input-box">
+                <input id="use" type="text" placeholder="Username" name="user" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="pas" placeholder="Password" name="pass" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button onclick="loginUser()" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account?
+                    <a href="#">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="form" id="for">
+        <p class="welcome">Hi! Arpita <span id="user"> Login successful</span></p>
+
+    </div>
+
+
+    <script>
+        document.getElementById("for").style.display = "none";
+
+
+
+        function loginUser() {
+            var username = document.getElementById("use").value;
+            var password = document.getElementById("pas").value;
+
+            if (Number(username) === 123 && Number(password) === 123) {
+
+                document.getElementById("wrapper").style.display = "none";
+                document.getElementById("for").style.display = "block";
+                document.body.style.background = "url(https://wallpaperaccess.com/full/1872.jpg)";
+                console.log('Login successful');
+            }
+            else {
+                alert('Invalid username or password');
+            }
+        }
+        //const form = document.querySelector('form');
+
+        //form.addEventListener('submit', function (event) {
+          //  event.preventDefault();
+       // });
+    </script>
+</body>
+
+
+</html>
